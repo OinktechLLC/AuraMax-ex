@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*web.max.ru*",
+      "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest", "fetch", "image", "script", "stylesheet", "websocket"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*max.ru*",
+      "resourceTypes": ["xmlhttprequest", "fetch", "beacon", "ping"]
+    }
+  }
+]
